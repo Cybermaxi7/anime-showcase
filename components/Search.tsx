@@ -22,7 +22,7 @@ export default function Search() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search Animes here..."
-            className="w-full bg-transparent border-b p-2 outline-none text-sm md:text-lg text-gray-400 border-b-gray-400"
+            className="w-full bg-transparent border-b p-2 outline-none text-sm md:text-lg text-gray-400 border-none border-b-gray-400"
         />
         <button type="submit" hidden>Search</button>
       </form>

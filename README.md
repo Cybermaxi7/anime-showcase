@@ -2,7 +2,7 @@
 
 ## Anime Showcase with Search and Individual Anime Details
 
-This Next.js application showcases a collection of anime with search functionality and detailed pages for each anime. It leverages server actions for data fetching and Framer Motion for smooth animations.
+This Next.js application showcases a collection of anime with search functionality and detailed pages for each anime. It leverages server actions for data fetching and Framer Motion for smooth animations and Endless Scrolling functionality.
 
 **Features:**
 
@@ -10,6 +10,7 @@ This Next.js application showcases a collection of anime with search functionali
 - **Individual Anime Details:** Clicking on an anime displays a dedicated page with details and potentially videos associated with the anime.
 - **Server Actions:** Data fetching utilizes Next.js server actions to ensure efficient data management and potential data transformation on the server-side.
 - **Framer Motion Animations:** Animations are implemented using Framer Motion for an engaging user experience.
+- **Endless Scrolling** Animes are been shown endlessly on scroll 
 
 **Installation:**
 
