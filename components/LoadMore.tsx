@@ -37,7 +37,7 @@ function LoadMore() {
                         className="object-contain"
                     />
                 </div>
-                \
+                
             </section>
         </>
     );

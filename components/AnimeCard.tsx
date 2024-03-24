@@ -15,13 +15,14 @@ export interface AnimeProp {
 interface Prop {
     anime: AnimeProp;
     index: number;
+    name: string;
 }
 const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
 };
 
-function AnimeCard({ anime, index }: Prop) {
+function AnimeCard({ anime, index, name }: Prop) {
     return (
         <MotionDiv
             variants={variants}
@@ -32,7 +33,7 @@ function AnimeCard({ anime, index }: Prop) {
                 duration: index * 0.25,
                 delay: 1,
             }}
-            className="max-w-sm rounded relative w-full"
+            className="rounded relative w-full scale-95 hover:scale-100 ease-in-out duration-300 shadow-sm shadow-gray-900"
         >
             <div className="relative w-full h-[37vh]">
                 <Image
@@ -40,6 +41,7 @@ function AnimeCard({ anime, index }: Prop) {
                     alt={anime.name}
                     fill
                     className="rounded-xl"
+                    sizes="100vw"
                 />
             </div>
             <div className="py-4 flex flex-col gap-3">
@@ -56,7 +58,7 @@ function AnimeCard({ anime, index }: Prop) {
                 <div className="flex gap-4 items-center">
                     <div className="flex flex-row gap-2 items-center">
                         <Image
-                            src="./episodes.svg"
+                            src="/episodes.svg"
                             alt="episodes"
                             width={20}
                             height={20}
@@ -68,7 +70,7 @@ function AnimeCard({ anime, index }: Prop) {
                     </div>
                     <div className="flex flex-row gap-2 items-center">
                         <Image
-                            src="./star.svg"
+                            src="/star.svg"
                             alt="star"
                             width={18}
                             height={18}
